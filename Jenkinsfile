@@ -9,7 +9,7 @@ pipeline {
         
       }
       steps {
-        powershell(script: 'c:\\test55.ps1', returnStatus: true, returnStdout: true)
+        powershell(script: 'c:\\test.ps1', returnStatus: true, returnStdout: true)
       }
     }
   }
