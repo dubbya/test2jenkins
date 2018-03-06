@@ -9,7 +9,7 @@ pipeline {
         
       }
       steps {
-        powershell(script: '\'Write-Output "PowerShell is mighty!"', returnStdout: true)
+        powershell(script: '\'Write-Output "PowerShell is mighty!"\'', returnStdout: true)
       }
     }
   }
