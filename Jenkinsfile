@@ -1,6 +1,5 @@
 pipeline {
   agent any
-  options { skipDefaultCheckout() }
   stages {
     stage('Sleep') {
       agent {
@@ -11,7 +10,11 @@ pipeline {
       }
       steps {
         sleep 5
+        powershell(script: 'c:\\test.ps1', returnStatus: true, returnStdout: true)
       }
     }
+  }
+  options {
+    skipDefaultCheckout()
   }
 }
