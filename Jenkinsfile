@@ -9,7 +9,7 @@ pipeline {
         
       }
       steps {
-        powershell(script: 'c:\\test.ps1', returnStatus: true, returnStdout: true)
+        powershell(script: '\'Write-Output "PowerShell is mighty!"', returnStdout: true)
       }
     }
   }
